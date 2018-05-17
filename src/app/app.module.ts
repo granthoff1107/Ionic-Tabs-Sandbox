@@ -10,6 +10,9 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { ComponentsModule } from '../components/components.module';
+import { RestEzListComponent } from '../components/rest-ez-list/rest-ez-list';
+import { LayoutComponent } from '../components/layout/layout';
 
 @NgModule({
   declarations: [
@@ -17,10 +20,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    LayoutComponent,
+    RestEzListComponent
   ],
   imports: [
     BrowserModule,
+    //ComponentsModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],

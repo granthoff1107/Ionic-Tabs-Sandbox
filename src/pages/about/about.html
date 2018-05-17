@@ -1,11 +1,12 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      About
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
+<layout ion-navbar pageName="about"></layout>
 <ion-content padding>
-
+    <ion-refresher (ionRefresh)="refresh($event)">
+      <ion-refresher-content
+        pullingIcon="arrow-dropdown"
+        pullingText="Pull to refresh"
+        refreshingSpinner="circles"
+        refreshingText="Refreshing...">
+      </ion-refresher-content>
+    </ion-refresher>
+  <rest-ez-list #restEzList></rest-ez-list>
 </ion-content>
