@@ -1,6 +1,6 @@
 <ion-list>
   <ion-item *ngFor="let user of users">
-    <ion-avatar item-left>
+    <ion-avatar (click)="this.navigateToDetail(user)" item-left>
         <img src="https://www.vccircle.com/wp-content/uploads/2017/03/default-profile.png">
     </ion-avatar>
     <ion-note>{{user}}</ion-note>

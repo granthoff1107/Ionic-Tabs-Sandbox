@@ -13,6 +13,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { ComponentsModule } from '../components/components.module';
 import { RestEzListComponent } from '../components/rest-ez-list/rest-ez-list';
 import { LayoutComponent } from '../components/layout/layout';
+import { PageBaseComponent } from "../components/page-base/page-base";
+import { ProfilePage } from '../pages/profile/profile';
 
 @NgModule({
   declarations: [
@@ -21,8 +23,10 @@ import { LayoutComponent } from '../components/layout/layout';
     ContactPage,
     HomePage,
     TabsPage,
+    ProfilePage,
     LayoutComponent,
-    RestEzListComponent
+    RestEzListComponent,
+    PageBaseComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +39,8 @@ import { LayoutComponent } from '../components/layout/layout';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    ProfilePage,
   ],
   providers: [
     StatusBar,

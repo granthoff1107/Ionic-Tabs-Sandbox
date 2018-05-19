@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RestEzListComponent } from './rest-ez-list/rest-ez-list';
 import { LayoutComponent } from './layout/layout';
+import { PageBaseComponent } from './page-base/page-base';
 @NgModule({
 	declarations: [RestEzListComponent,
-    LayoutComponent],
+    LayoutComponent,
+    PageBaseComponent],
 	imports: [],
 	exports: [RestEzListComponent,
-    LayoutComponent]
+    LayoutComponent,
+    PageBaseComponent]
 })
 export class ComponentsModule {}
